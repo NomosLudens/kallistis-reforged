@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b090f" />
+    <meta name="description" content="Fundação local do KALLÍSTIS — REFORGED." />
+    <title>KALLÍSTIS — REFORGED</title>
+    <link rel="icon" href="/brand-assets/kallistis-canon-crystal.webp" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body>
+    <div class="app-frame">
+      <aside class="sidebar" aria-label="Navegação principal">
+        <a class="brand" href="/" aria-label="KALLÍSTIS REFORGED — início">
+          <img src="/brand-assets/kallistis-canon-crystal.webp" alt="" />
+          <span class="brand-copy">
+            <strong>KALLÍSTIS</strong>
+            <span>REFORGED</span>
+          </span>
+        </a>
+
+        <p class="nav-caption">NAVEGAÇÃO</p>
+        <nav class="main-nav">
+          <a class="nav-link is-current" href="#inicio" aria-current="page">
+            <span class="nav-mark" aria-hidden="true">◆</span>
+            <span>Início</span>
+          </a>
+        </nav>
+
+        <div class="sidebar-note">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span>HOMOLOGAÇÃO LOCAL</span>
+        </div>
+      </aside>
+
+      <main id="inicio" class="main-content">
+        <header class="topbar">
+          <span class="breadcrumb">KALLÍSTIS <span>/</span> FUNDAÇÃO</span>
+          <span class="local-badge"><span aria-hidden="true">●</span> AMBIENTE LOCAL</span>
+        </header>
+
+        <section class="intro-panel" aria-labelledby="page-title">
+          <div class="intro-copy">
+            <p class="eyebrow">GATE 01 <span>·</span> FUNDAÇÃO</p>
+            <h1 id="page-title">A mesa começa <em>aqui.</em></h1>
+            <p class="intro-description">
+              Uma base independente para as histórias de KALLÍSTIS. Escolha um perfil aberto de
+              homologação para entrar nesta área inicial.
+            </p>
+          </div>
+          <div class="crystal-frame" aria-hidden="true">
+            <img src="/brand-assets/kallistis-canon-crystal.webp" alt="" />
+          </div>
+          <div class="intro-index" aria-hidden="true">01 / 01</div>
+        </section>
+
+        <section class="profiles-section" aria-labelledby="profiles-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">IDENTIDADE DE HOMOLOGAÇÃO</p>
+              <h2 id="profiles-title">Perfis abertos</h2>
+            </div>
+            <p class="section-aside">Seleção local <span>·</span> sem autenticação</p>
+          </div>
+
+          <div class="profile-workspace">
+            <div class="profile-list-panel">
+              <div id="profile-list" class="profile-list" aria-live="polite" aria-busy="true">
+                <p class="loading-state">Carregando perfis do banco local…</p>
+              </div>
+            </div>
+
+            <form id="profile-form" class="create-panel">
+              <div class="create-heading">
+                <span class="create-index">+</span>
+                <div>
+                  <p class="eyebrow">NOVO REGISTRO</p>
+                  <h3>Criar perfil</h3>
+                </div>
+              </div>
+
+              <label class="field-label" for="profile-name">Nome do perfil</label>
+              <input
+                id="profile-name"
+                name="name"
+                type="text"
+                maxlength="40"
+                autocomplete="off"
+                placeholder="Ex.: JOGADOR-01"
+                required
+              />
+
+              <label class="field-label" for="profile-role">Tipo</label>
+              <select id="profile-role" name="role" required>
+                <option value="jogador">Jogador</option>
+                <option value="mestre">Mestre</option>
+              </select>
+
+              <button class="primary-button" type="submit">CRIAR PERFIL <span aria-hidden="true">↗</span></button>
+              <p id="profile-status" class="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+
+          <p class="access-note">
+            A seleção de perfil é aberta e serve apenas para homologação local. Ela não protege
+            acesso a dados e este servidor deve permanecer restrito a este computador.
+          </p>
+        </section>
+
+        <footer class="page-footer">
+          <span>KALLÍSTIS — REFORGED</span>
+          <span>FUNDAMENTO LOCAL <span aria-hidden="true">◆</span></span>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
